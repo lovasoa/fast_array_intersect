@@ -15,6 +15,7 @@
     "url" : "https://github.com/lovasoa/array_intersect"
   },
   "files": ["lib/*"],
+  "keywords": ["list", "intersection", "set", "intersecting", "array", "product"],
   "devDependencies": {
     "array-intersection-x": "^3.1.2",
     "benchmark": "^2.1.4",
