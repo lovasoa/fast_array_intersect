@@ -4,7 +4,8 @@
   "description": "Fast intersection of multiple arrays",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node tests.js"
+    "test": "node tests.js",
+    "build": "tsc"
   },
   "author": "lovasoa",
   "license": "MIT",
