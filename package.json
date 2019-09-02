@@ -12,7 +12,7 @@
   "runkitExample": "const intersect = require('fast_array_intersect').default;\nintersect([[1,2,3],[2,3,4]])",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/lovasoa/array_intersect"
+    "url" : "https://github.com/lovasoa/fast_array_intersect"
   },
   "files": ["lib/*"],
   "keywords": ["list", "intersection", "set", "intersecting", "array", "product"],

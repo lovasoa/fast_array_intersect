@@ -32,7 +32,7 @@ The order and references of result values are determined by the shortest of the 
 ### Examples
 
 ```js
-import intersect from 'fast_array_intersection'
+import intersect from 'fast_array_intersect'
 
 intersect([
   [1,2,3],
