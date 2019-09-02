@@ -1,6 +1,6 @@
 {
   "name": "fast_array_intersect",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Fast intersection of multiple arrays",
   "main": "lib/index.js",
   "scripts": {
@@ -11,11 +11,20 @@
   "license": "MIT",
   "runkitExample": "const intersect = require('fast_array_intersect').default;\nintersect([[1,2,3],[2,3,4]])",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/lovasoa/fast_array_intersect"
+    "type": "git",
+    "url": "https://github.com/lovasoa/fast_array_intersect"
   },
-  "files": ["lib/*"],
-  "keywords": ["list", "intersection", "set", "intersecting", "array", "product"],
+  "files": [
+    "lib/*"
+  ],
+  "keywords": [
+    "list",
+    "intersection",
+    "set",
+    "intersecting",
+    "array",
+    "product"
+  ],
   "devDependencies": {
     "array-intersection-x": "^3.1.2",
     "benchmark": "^2.1.4",
