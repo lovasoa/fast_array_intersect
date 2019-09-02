@@ -19,6 +19,9 @@ The arguments are :
 1 | `arrays` | required  | array of arrays | The arrays to intersect
 2 | `hash`   | optional  | function        | A function that takes an element of one of the arrays and returns a value. The value should be the same for semantically identical values.
 
+By default, the intersection is computed for values that are equal under [*SameValueZero*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
+You can use the optional hash function argument when you are intersecting arrays of javascript objects. You should then implement a function that returns the same primitive value when called with identical objects. 
+
 ### Examples
 
 ```es6
