@@ -43,5 +43,10 @@ export default function intersect<T>(arrays: T[][], hash=default_hash): T[] {
   }
 
   // Output only the elements that have been seen as many times as there are arrays
-  return arrays[0].filter(e => set.get(hash(e)) === arrays.length);
+  return arrays[0].filter(e => {
+    const hashed = hash(e);
+    const count = set.get(hashed);
+    if (count !== undefined) set.set(hashed, 0);
+    return count === arrays.length
+  });
 }
