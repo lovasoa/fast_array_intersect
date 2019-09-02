@@ -20,7 +20,9 @@ The arguments are :
 2 | `hash`   | optional  | function        | A function that takes an element of one of the arrays and returns a value. The value should be the same for semantically identical values.
 
 By default, the intersection is computed for values that are equal under [*SameValueZero*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness).
-You can use the optional hash function argument when you are intersecting arrays of javascript objects. You should then implement a function that returns the same primitive value when called with identical objects. 
+You can use the optional hash function argument when you are intersecting arrays of javascript objects. You should then implement a function that returns the same primitive value when called with identical objects.
+
+The order and references of result values are determined by the shortest of the input arrays.
 
 ### Examples
 
@@ -49,7 +51,7 @@ var intersect = require("fast_array_intersect").default;
 ```
 
 ## Performance
-`fast_array_intersect` is designed to be fast, and beats all other array intersection function I tested :
+`fast_array_intersect` is designed to be fast, and beats all other array intersection function I tested.
 
 ### Benchmark
 Here is a comparison of **`fast_array_intersect`** with
