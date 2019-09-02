@@ -2,6 +2,15 @@ function default_hash<T>(x: T): any {
   return x;
 }
 
+ /**
+  * Takes an array of arrays and optionnally a hash function,
+  * and returns the elements that are present in all the arrays.
+  * When intersecting arrays of objects, you should use a custom
+  * hash function that returns identical values when given objects
+  * that should be considered equal in your application.
+  * The default hash function is the identity function.
+  * When performance is not critical, a handy hash function can be `JSON.stringify`.
+  */
 export default function intersect<T>(arrays: T[][], hash=default_hash): T[] {
   if (arrays.length === 0) return [];
 
