@@ -7,6 +7,7 @@ And it does that faster than any other published alternative I am aware of.
 [![npm version](https://badgen.net/npm/v/fast_array_intersect)](https://www.npmjs.com/package/fast_array_intersect)
 [![size](https://badgen.net/bundlephobia/minzip/fast_array_intersect)](https://bundlephobia.com/result?p=fast_array_intersect)
 ![CI status](https://github.com/lovasoa/fast_array_intersect/workflows/Node%20CI/badge.svg)
+![Typed with TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=blue&color=555555)
 
 ## How to use
 
