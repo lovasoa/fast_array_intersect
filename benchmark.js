@@ -1,6 +1,7 @@
 const array_intersect = require('./lib/index.js').default;
 const intersectionOf = require("intersection-of").intersectionOf;
 const arrayIntersectionX = require("array-intersection-x").default;
+const intersect = require('intersect');
 
 var Benchmark = require('benchmark');
 
@@ -15,6 +16,7 @@ function make_input(arrays, elems, intersect) {
 }
 
 let inputs = [
+  [2, 10, 5],
   [2, 100, 10],
   [10, 100, 99],
   [10, 100, 0],
@@ -27,7 +29,8 @@ inputs.forEach(([a,b,c]) => {
   let input = make_input(a,b,c);
   let name = `${a} arrays of ${b} elements, with an intersection of size ${c}`;
   new Benchmark.Suite(name)
-    .add("array_intersect", () => array_intersect(input))
+    .add("fast_array_intersect", () => array_intersect(input))
+    .add("intersect", () => intersect(input))
     .add("intersection-of", () => intersectionOf.apply(null, input))
     .add("array-intersection-x", () => arrayIntersectionX.apply(null, input))
     .on('start', function(event) {
