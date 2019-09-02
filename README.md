@@ -4,6 +4,10 @@ The fastest javascript array intersection function.
 It takes arrays, and returns the elements that are common to all the arrays.
 And it does that faster than any other published alternative I am aware of.
 
+[![npm version](https://badgen.net/npm/v/fast_array_intersect)](https://www.npmjs.com/package/fast_array_intersect)
+[![size](https://badgen.net/bundlephobia/minzip/fast_array_intersect)](https://bundlephobia.com/result?p=fast_array_intersect)
+![CI status](https://github.com/lovasoa/fast_array_intersect/workflows/Node%20CI/badge.svg)
+
 ## How to use
 
 This module exports a single default function, with the following signature:
@@ -26,7 +30,7 @@ The order and references of result values are determined by the shortest of the 
 
 ### Examples
 
-```es6
+```js
 import intersect from 'fast_array_intersection'
 
 intersect([
