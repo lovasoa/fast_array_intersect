@@ -46,7 +46,6 @@ export default function intersect<T>(arrays: ReadonlyArray<T>[], hash=default_ha
   return arrays[0].filter(e => {
     const hashed = hash(e);
     const count = set.get(hashed);
-    if (count !== undefined) set.set(hashed, 0);
     return count === arrays.length
   });
 }
