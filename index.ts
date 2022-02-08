@@ -11,7 +11,7 @@ function default_hash<T>(x: T): any {
   * The default hash function is the identity function.
   * When performance is not critical, a handy hash function can be `JSON.stringify`.
   */
-export default function intersect<T>(arrays: T[][], hash=default_hash): T[] {
+export default function intersect<T>(arrays: ReadonlyArray<T>[], hash=default_hash): T[] {
   if (arrays.length === 0) return [];
 
   // Put the smallest array in the beginning
