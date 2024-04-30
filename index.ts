@@ -3,7 +3,7 @@ function default_hash<T>(x: T): any {
 }
 
  /**
-  * Takes an array of arrays and optionnally a hash function,
+  * Takes an array of arrays and optionally a hash function,
   * and returns the elements that are present in all the arrays.
   * When intersecting arrays of objects, you should use a custom
   * hash function that returns identical values when given objects
